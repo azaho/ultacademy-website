@@ -402,6 +402,97 @@ body{background-color:#ffffff;color:var(--contrast);}a{color:var(--accent);}a{te
   color: #1e73be;
 }
 
+.ulta-application-callout {
+  align-items: center;
+  background: #f7f8f9;
+  border: 1px solid #e2e5e9;
+  border-radius: 18px;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: minmax(0, 1fr) auto;
+  padding: clamp(28px, 5vw, 46px);
+}
+
+.ulta-application-callout h2,
+.ulta-leadership h2 {
+  margin-bottom: 12px;
+}
+
+.ulta-application-callout p {
+  color: #4f5965;
+  font-size: 17px;
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+
+.ulta-application-callout a {
+  color: #1e73be;
+  font-weight: 700;
+}
+
+.ulta-en-countdown {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, minmax(76px, 1fr));
+}
+
+.ulta-en-countdown__item {
+  background: #0c1d38;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 16px 12px;
+  text-align: center;
+}
+
+.ulta-en-countdown__digits {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.ulta-en-countdown__label {
+  display: block;
+  font-size: 12px;
+  margin-top: 7px;
+  text-transform: uppercase;
+}
+
+.ulta-leadership-grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.ulta-leadership-card {
+  background: #ffffff;
+  box-shadow: 0 5px 40px rgba(24, 27, 33, 0.1);
+}
+
+.ulta-leadership-card img {
+  aspect-ratio: 1;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+.ulta-leadership-card__copy {
+  padding: 20px;
+}
+
+.ulta-leadership-card h3 {
+  font-size: 20px;
+  margin: 0 0 7px;
+}
+
+.ulta-leadership-card p {
+  color: #767676;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0;
+}
+
 @media (max-width: 760px) {
   .ulta-main-content__intro {
     margin-bottom: 48px;
@@ -421,6 +512,24 @@ body{background-color:#ffffff;color:var(--contrast);}a{color:var(--accent);}a{te
 
   .ulta-kse-partner__grid {
     gap: 24px;
+    grid-template-columns: 1fr;
+  }
+
+  .ulta-application-callout {
+    grid-template-columns: 1fr;
+  }
+
+  .ulta-leadership-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 440px) {
+  .ulta-en-countdown {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .ulta-leadership-grid {
     grid-template-columns: 1fr;
   }
 }
@@ -699,31 +808,47 @@ body{background-color:#ffffff;color:var(--contrast);}a{color:var(--accent);}a{te
 							</ul>
 						</section>
 
+						<section class="ulta-main-content__section ulta-application-callout" aria-labelledby="ulta-application-title">
+							<div>
+								<span class="ulta-main-content__eyebrow">Applications</span>
+								<h2 id="ulta-application-title">Applications for 2027–2028 are open</h2>
+								<p>Apply by 31 December 2026 at 23:59 Kyiv time.</p>
+								<a href="apply/">Learn about the selection process</a>
+							</div>
+							<div class="ulta-en-countdown" id="ulta-en-countdown" aria-label="Time remaining to apply">
+								<div class="ulta-en-countdown__item"><span class="ulta-en-countdown__digits" data-unit="days">00</span><span class="ulta-en-countdown__label">Days</span></div>
+								<div class="ulta-en-countdown__item"><span class="ulta-en-countdown__digits" data-unit="hours">00</span><span class="ulta-en-countdown__label">Hours</span></div>
+								<div class="ulta-en-countdown__item"><span class="ulta-en-countdown__digits" data-unit="minutes">00</span><span class="ulta-en-countdown__label">Minutes</span></div>
+								<div class="ulta-en-countdown__item"><span class="ulta-en-countdown__digits" data-unit="seconds">00</span><span class="ulta-en-countdown__label">Seconds</span></div>
+							</div>
+						</section>
+
 						<section class="ulta-main-content__section ulta-kse-partner" aria-labelledby="ulta-kse-partner-title">
 							<span class="ulta-main-content__eyebrow">2027–2028 program</span>
-							<h2 id="ulta-kse-partner-title">Our founding partner: KSE Foundation</h2>
+							<h2 id="ulta-kse-partner-title">Our partner: Kyiv School of Economics</h2>
 							<div class="ulta-kse-partner__grid">
-								<a class="ulta-kse-logo-link" href="https://foundation.kse.ua/en/what-we-do/">
-									<img loading="lazy" decoding="async" width="200" height="27" src="../wp-content/uploads/2026/10/KSE_Foundation_logo.svg" alt="KSE Foundation" />
+								<a class="ulta-kse-logo-link" href="https://kse.ua/">
+									<img loading="lazy" decoding="async" width="280" height="94" src="../wp-content/uploads/2026/10/KSE_full_white.svg" alt="Kyiv School of Economics (KSE)" />
 								</a>
 								<div class="ulta-kse-partner__copy">
-									<p><strong>KSE</strong> is a group of companies that includes a world-class private higher educational institution (KSE University), one of the largest analytical centers of Ukraine (KSE Institute), and a Charitable Foundation (KSE Foundation).</p>
-									<p>KSE was founded in 1996 by the Economic Research and Education Consortium (EERC) and the Eurasia Foundation.</p>
-									<p>Since the beginning of the large-scale Russian invasion, the KSE Foundation has been raising funds for charitable assistance for Ukrainians. Before the full-scale invasion, we raised money for education to change lives, and now we raise money to save lives. <a href="https://foundation.kse.ua/en/what-we-do/">Read more about the KSE Foundation here.</a></p>
+									<p>Kyiv School of Economics (KSE) is an educational ecosystem that combines intellectual and institutional strength. Through science, technology, entrepreneurship, and resource mobilization, it provides knowledge, builds skills, and strengthens leaders’ capacity to act in uncertainty.</p>
+									<p>Founded in 1996, KSE has developed as an ecosystem of interconnected directions. Each has its own specialization, audience, and expertise, while all operate under the KSE brand, share its values, and reinforce their collective impact.</p>
+									<p>The KSE ecosystem includes five key directions: KSE University, KSE Business School, KSE ProfTech, KSE Institute, and KSE Foundation. <a href="https://kse.ua/">Learn more at kse.ua</a>.</p>
 								</div>
 							</div>
 						</section>
+
+						<section class="ulta-main-content__section ulta-leadership" aria-labelledby="ulta-leadership-title">
+							<span class="ulta-main-content__eyebrow">Our team</span>
+							<h2 id="ulta-leadership-title">Leadership team</h2>
+							<div class="ulta-leadership-grid">
+								<article class="ulta-leadership-card"><img loading="lazy" decoding="async" src="../wp-content/uploads/2026/11/vera_medvedeva.jpg" alt="Vira Medvedieva" /><div class="ulta-leadership-card__copy"><h3>Vira Medvedieva</h3><p>MIT student, ULTA Director</p></div></article>
+								<article class="ulta-leadership-card"><img loading="lazy" decoding="async" src="../wp-content/uploads/2026/11/nazar_drugov.jpg" alt="Nazar Drugov" /><div class="ulta-leadership-card__copy"><h3>Nazar Drugov</h3><p>MIT student, ULTA Co-Director</p></div></article>
+								<article class="ulta-leadership-card"><img loading="lazy" decoding="async" src="../wp-content/uploads/2023/04/huri-1-pwstn3dbk5lp37q1z4z5oqtnepm86zt5bn81qf4vu4.jpg" alt="Svitlana Krasunska" /><div class="ulta-leadership-card__copy"><h3>Svitlana Krasunska</h3><p>MIT-Ukraine Program Manager</p></div></article>
+								<article class="ulta-leadership-card"><img loading="lazy" decoding="async" src="../wp-content/uploads/2026/11/maryna_borysenko.jpeg" alt="Maryna Borysenko" /><div class="ulta-leadership-card__copy"><h3>Maryna Borysenko</h3><p>Director of Programs and Implementation, KSE Foundation</p></div></article>
+							</div>
+						</section>
 					</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-widget ulta-impact-toggle-widget">
-				<div class="elementor-widget-container">
-					<button class="ulta-impact-toggle" type="button" aria-expanded="false">
-						<span>ULTA 2023–2024: Our Impact</span>
-						<svg class="ulta-impact-toggle__icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-						</svg>
-					</button>
 				</div>
 				</div>
 				<div class="elementor-element elementor-element-167b39a exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="167b39a" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
@@ -2300,7 +2425,7 @@ body{background-color:#ffffff;color:var(--contrast);}a{color:var(--accent);}a{te
 			<div class="elementor-widget-wrap elementor-element-populated">
 						<div class="elementor-element elementor-element-5298a241 exad-sticky-section-no exad-glass-effect-no elementor-widget elementor-widget-heading" data-id="5298a241" data-element_type="widget" data-e-type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Ukraine Leadership and Technology Academy © 2022-2023</h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Ukraine Leadership and Technology Academy © 2022-2026</h2>				</div>
 				</div>
 					</div>
 		</div>
@@ -2363,20 +2488,30 @@ var WprConfig = {"ajaxurl":"https:\/\/ultacademy.org\/wp-admin\/admin-ajax.php",
 <script data-cfasync="false" src="../wp-content/plugins/royal-elementor-addons/assets/js/frontend.min.js" id="wpr-addons-js-js"></script>
 <script src="../wp-content/plugins/royal-elementor-addons/assets/js/modal-popups.min.js" id="wpr-modal-popups-js-js"></script>
 
-<script>
+<script id="ulta-en-countdown-script">
 (function () {
-  var page = document.querySelector('.elementor-2973');
-  var toggle = document.querySelector('.ulta-impact-toggle');
+  var deadline = Date.parse('2026-12-31T21:59:00Z');
 
-  if (!page || !toggle) {
-    return;
+  function updateCountdown() {
+    var countdown = document.getElementById('ulta-en-countdown');
+    if (!countdown) return;
+
+    var remaining = Math.max(0, Math.floor((deadline - Date.now()) / 1000));
+    var values = {
+      days: Math.floor(remaining / 86400),
+      hours: Math.floor((remaining % 86400) / 3600),
+      minutes: Math.floor((remaining % 3600) / 60),
+      seconds: remaining % 60
+    };
+
+    Object.keys(values).forEach(function (unit) {
+      var element = countdown.querySelector('[data-unit="' + unit + '"]');
+      if (element) element.textContent = String(values[unit]).padStart(2, '0');
+    });
   }
 
-  toggle.addEventListener('click', function () {
-    var isExpanded = toggle.getAttribute('aria-expanded') === 'true';
-    toggle.setAttribute('aria-expanded', String(!isExpanded));
-    page.classList.toggle('ulta-impact-collapsed', isExpanded);
-  });
+  updateCountdown();
+  window.setInterval(updateCountdown, 1000);
 }());
 </script>
 
