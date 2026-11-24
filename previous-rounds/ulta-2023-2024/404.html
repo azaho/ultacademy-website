@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ULTA</title>
+<script>
+  // Works at a custom-domain root (/) and at the github.io project subpath.
+  var base = location.hostname.endsWith('github.io') ? '/ultacademy-website/' : '/';
+  var l = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+  location.replace(base + (l.indexOf('uk') === 0 ? 'ua/' : 'en/'));
+</script>
+</head>
+<body style="font-family:sans-serif;text-align:center;padding:3rem">
+  Page not found — redirecting to <a href="/en/">ULTA home</a>…
+</body>
+</html>
