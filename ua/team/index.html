@@ -289,8 +289,9 @@ body{background-color:#ffffff;color:var(--contrast);}a{color:var(--accent);}a{te
 					</div>
 		</section>
 <style>
-	.ulta-team-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
-	.ulta-team-grid > .elementor-column { width: 100% !important; max-width: 100% !important; }
+	.ulta-team-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 1fr; align-items: stretch; }
+	.ulta-team-grid > .elementor-column { display: flex; width: 100% !important; max-width: 100% !important; }
+	.ulta-team-grid > .elementor-column > .elementor-widget-wrap, .ulta-team-grid .elementor-widget, .ulta-team-grid .elementor-widget-container, .ulta-team-grid .exad-team-item, .ulta-team-grid .exad-team-member { width: 100%; height: 100%; }
 	@media (max-width: 767px) { .ulta-team-grid { grid-template-columns: 1fr; } }
 </style>
 <section class="elementor-section elementor-top-section elementor-element elementor-element-da53526 elementor-section-boxed elementor-section-height-default elementor-section-height-default exad-glass-effect-no wpr-particle-no wpr-jarallax-no wpr-parallax-no wpr-sticky-section-no wpr-column-slider-no wpr-equal-height-no exad-sticky-section-no" data-id="da53526" data-element_type="section" data-e-type="section">
