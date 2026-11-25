@@ -1,0 +1,13 @@
+/* Archive the 2023 logistics and 2023–2024 funding FAQ without deleting its source. */
+.elementor-47 [data-id="43233c0"],
+.elementor-47 [data-id="8685974"],
+.elementor-47 [data-id="de6626c"],
+.elementor-47 [data-id="9c228c0"],
+.elementor-47 [data-id="fe3a231"],
+.elementor-47 [data-id="9da5394"],
+.elementor-47 [data-id="3388dab"],
+.elementor-47 [data-id="1285a71"],
+#menu-item-1779,
+#menu-item-1780,
+a[href*="#logistics"],
+a[href*="#funding"] { display: none !important; }
